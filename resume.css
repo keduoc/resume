@@ -322,6 +322,9 @@ section.portfolio h2 {
     line-height: 1.2;
     font-weight: 600;
 }
+section.message h2{
+    margin-bottom: 20px;
+}
 section.skills h3{
     font-size: 14px;
     line-height: 1.1;
