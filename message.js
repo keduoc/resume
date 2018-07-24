@@ -14,7 +14,7 @@
             return query.find()     // find 返回一个 Promise 对象
         },
         //创建数据
-        save: function(){
+        save: function(name,content){
             let Message = AV.Object.extend('Message');
             let message = new Message();
             return message.save({   // save 返回一个 Promise 对象
@@ -54,7 +54,7 @@
             );
         },
         bindEvents: function () {
-            this.form.addEventListener('submit',function(e){
+            this.form.addEventListener('submit',(e) => {
                 e.preventDefault();
                 this.saveMessage()
             })
