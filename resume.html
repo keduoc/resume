@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简历</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <link rel="stylesheet" href="./resume.css">
+</head>
+<body>
+<div id="siteWelcome" class="site-welcome active"><div class="loading"></div></div>
+<div id="topNavBar" class="topNavBar" >
+    <div class="topNavBar-init clearfix">
+        <a href="#" alt="logo" class="logo">
+            <span class="rs">RS</span><span class="card">card</span>
+        </a>
+        <nav>
+            <ul class="clearfix">
+                <li>
+                    <a href="#siteabout">关于</a>
+                </li>
+                <li>
+                    <a href="#siteskill">技能</a>
+                </li>
+                <li>
+                    <a href="#siteworks">作品</a>
+                    <ul class="submenu">
+                        <li>作品1</li>
+                        <li>作品2</li>
+                        <li>作品3</li>
+                    </ul>
+                    <ul></ul>
+                </li>
+                <li>
+                    <a href="#siteblog">博客</a>
+                    <ul class="submenu">
+                        <li>博客1</li>
+                        <li>博客2</li>
+                        <li>博客3</li>
+                    </ul>
+                </li>
+                <li><a href="#sitecalendar">日历</a>
+                </li>
+                <li><a href="#sitenumber">联系方式</a>
+                </li>
+                <li><a href="#siteelse">其它</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
+<div class="banner" >
+    <div class="mask"></div>
+</div>
+    <main>
+        <div data-x id="siteabout" class="userCard">
+            <div class="pictureAndText clearfix">
+                <div class="picture">
+                    <img src="./startuper.jpg" alt="头像">
+                </div>
+                <div class="text">
+                        <span class="welcome">HELLO
+                        <span class="triangle">
+                        </span>
+                        </span>
+                        <h1>卢潮</h1>
+                        <p class="introduction">前端开发攻城狮</p>
+                        <hr>
+                        <dl>
+                            <dt>年龄</dt>
+                            <dd>18</dd>
+                            <dt>所在地</dt>
+                            <dd>上海</dd>
+                            <dt>邮箱</dt>
+                            <dd>610471863@qq.com</dd>
+                            <dt>电话</dt>
+                            <dd>17321233606</dd>
+                        </dl>
+                </div>
+            </div>
+            <footer class="media">
+                <a href="">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-matuwang-zhihufangxingdianji"></use>
+                </svg>
+                </a>
+                <a href="">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weixin"></use>
+                    </svg>
+            </footer>
+        </div>
+        <div class="center">
+            <a href="./styles/resume.css" class="download" target="_blank" download="">下载 PDF 文档</a>
+        </div>
+        <p class="selfIntroduction">
+            本人学识渊博、经验丰富，代码风骚、效率恐怖，<br>
+            C/C++、java、php无不精通，熟练掌握各种框架，<br>
+            深山苦练20余年，一天只睡4个小时，千里之外定位问题，瞬息之间修复上线。<br>
+            身体强壮、健步如飞，可连续编程100小时不休息，讨论技术方案5小时不喝水，<br>
+            上至带项目、出方案，下至盗账号、威胁PM，啥都能干。<br>
+            泡面矿泉水已准备好，学校不支持编程已辍学，家人不支持编程已断绝关系，<br>
+            老婆不支持编程已离婚，小孩不支持编程已送孤儿院，<br>
+            备用电源万兆光纤永不断电断网，门口已埋雷无人打扰。<br>
+        </p>
+    </main>
+ <section data-x id="siteskill" class="skills">
+    <h2>技能</h2>
+    <ol class="clearfix">
+        <li>
+            <h3>HTML &amp; CSS</h3>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </li>
+        <li>
+            <h3>JavaScript</h3>
+            <div class="progressBar">
+                <div class="progress" style="width: 60%"></div>
+            </div>
+        </li>
+        <li>
+            <h3>JQuery</h3>
+            <div class="progressBar">
+                <div class="progress" style="width: 50%"></div>
+            </div>
+        </li>
+        <li>
+            <h3>React.js</h3>
+            <div class="progressBar">
+                <div class="progress" style="width: 80%"></div>
+            </div>
+        </li>
+        <li>
+            <h3>Vue.js</h3>
+            <div class="progressBar">
+                <div class="progress" style="width: 75%"></div>
+            </div>
+        </li>
+        <li>
+            <h3>Node.js</h3>
+            <div class="progressBar">
+                <div class="progress" style="width: 30%"></div>
+            </div>
+        </li>
+    </ol>
+</section>
+<section data-x id="siteworks" class="portfolio">
+    <h2>作品集</h2>
+    <!-- Slider main container -->
+    <div id="mySwiper">
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <img src="works/nav-bar.jpg" class="swiper-slide">
+                <img src="works/canvas.jpg" class="swiper-slide">
+                <img src="works/apple-style-slides.jpg" class="swiper-slide">
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+<section class="message">
+    <h2>留言</h2>
+    <ol id="messageList">
+    </ol>
+    <form id="postMessageForm" style="width: 700px; margin: 50px auto;">
+        <label for="">姓名</label>
+        <input type="text" name="name">
+        <label for="">内容</label>
+        <input type="text" name="content">
+        <input type="submit" value="提交">
+    </form>
+</section>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<script src="//at.alicdn.com/t/font_701413_4q1zbwvezu0afw29.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js'></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.9.0/dist/av-min.js"></script>
+
+<!--模块化-->
+<script src="loading.js"></script>
+<script src="sticky-topBar.js"></script>
+<script src="second-level_menu.js"></script>
+<script src="auto-slide-up.js"></script>
+<script src="init-swiper.js"></script>
+<script src="smoothly-navigation.js"></script>
+<script src="message.js"></script>
+
+</body>
+</html>

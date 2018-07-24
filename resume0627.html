@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resume</title>
+    <link rel="stylesheet" href="./resume.css">
+    <script src="//at.alicdn.com/t/font_701413_4q1zbwvezu0afw29.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em; height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+        .loading{
+            height: 200px;
+            width: 200px;
+            position: relative;
+        }
+        .loading::before,.loading::after{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            animation: s 1.5s linear infinite;
+        }
+        .loading::after{animation-delay: 0.7s;}
+        @keyframes s {
+            0%{
+                width: 0;height: 0;opacity: 1;
+            }
+            100%{
+                width: 100px;height: 100px;opacity: 0;
+            }
+        }
+        .site-welcome{
+            display: none;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: #888;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+        }
+        .site-welcome.active{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+<div id="siteWelcome" class="site-welcome active"><div class="loading"></div></div>
+<div id="topNavBar" class="topNavBar" >
+    <div class="topNavBar-init clearfix">
+        <a href="#" alt="logo" class="logo">
+            <span class="rs">RS</span><span class="card">card</span>
+        </a>
+        <nav>
+            <ul class="clearfix">
+                <li>
+                    <a href="#siteabout">关于</a>
+                </li>
+                <li>
+                    <a href="#siteskill">技能</a>
+                </li>
+                <li>
+                    <a href="#siteworks">作品</a>
+                    <ul class="submenu">
+                        <li>作品1</li>
+                        <li>作品2</li>
+                        <li>作品3</li>
+                    </ul>
+                    <ul></ul>
+                </li>
+                <li>
+                    <a href="#siteblog">博客</a>
+                    <ul class="submenu">
+                        <li>博客1</li>
+                        <li>博客2</li>
+                        <li>博客3</li>
+                    </ul>
+                </li>
+                <li><a href="#sitecalendar">日历</a>
+                </li>
+                <li><a href="#sitenumber">联系方式</a>
+                </li>
+                <li><a href="#siteelse">其它</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
+<div class="banner" >
+    <div class="mask"></div>
+</div>
+<main>
+    <div id="siteabout" class="userCard">
+        <div class="pictureAndText clearfix">
+            <div class="picture">
+                <img src="./startuper.jpg" alt="头像">
+            </div>
+            <div class="text">
+                        <span class="welcome">HELLO
+                        <span class="triangle">
+                        </span>
+                        </span>
+                <h1>卢潮</h1>
+                <p class="introduction">前端开发攻城狮</p>
+                <hr>
+                <dl>
+                    <dt>年龄</dt>
+                    <dd>18</dd>
+                    <dt>所在地</dt>
+                    <dd>上海</dd>
+                    <dt>邮箱</dt>
+                    <dd>610471863@qq.com</dd>
+                    <dt>电话</dt>
+                    <dd>17321233606</dd>
+                </dl>
+            </div>
+        </div>
+        <footer class="media">
+            <a href="">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            </a>
+            <a href="">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-matuwang-zhihufangxingdianji"></use>
+                </svg>
+            </a>
+            <a href="">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            </a>
+            <a href="">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weixin"></use>
+                </svg>
+        </footer>
+    </div>
+    <div class="center">
+        <a href="./styles/resume.css" class="download" target="_blank" download="">下载 PDF 文档</a>
+    </div>
+    <p class="selfIntroduction">
+        本人学识渊博、经验丰富，代码风骚、效率恐怖，<br>
+        C/C++、java、php无不精通，熟练掌握各种框架，<br>
+        深山苦练20余年，一天只睡4个小时，千里之外定位问题，瞬息之间修复上线。<br>
+        身体强壮、健步如飞，可连续编程100小时不休息，讨论技术方案5小时不喝水，<br>
+        上至带项目、出方案，下至盗账号、威胁PM，啥都能干。<br>
+        泡面矿泉水已准备好，学校不支持编程已辍学，家人不支持编程已断绝关系，<br>
+        老婆不支持编程已离婚，小孩不支持编程已送孤儿院，<br>
+        备用电源万兆光纤永不断电断网，门口已埋雷无人打扰。<br>
+    </p>
+</main>
+<section id="siteskill" class="skills">
+    <h2>技能</h2>
+    <ol class="clearfix">
+        <li>
+            <h3>HTML &amp; CSS</h3>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </li>
+        <li>
+            <h3>JavaScript</h3>
+            <div class="progressBar">
+                <div class="progress" style="width: 60%"></div>
+            </div>
+        </li>
+        <li>
+            <h3>JQuery</h3>
+            <div class="progressBar">
+                <div class="progress" style="width: 50%"></div>
+            </div>
+        </li>
+        <li>
+            <h3>React.js</h3>
+            <div class="progressBar">
+                <div class="progress" style="width: 80%"></div>
+            </div>
+        </li>
+        <li>
+            <h3>Vue.js</h3>
+            <div class="progressBar">
+                <div class="progress" style="width: 75%"></div>
+            </div>
+        </li>
+        <li>
+            <h3>Node.js</h3>
+            <div class="progressBar">
+                <div class="progress" style="width: 30%"></div>
+            </div>
+        </li>
+    </ol>
+</section>
+<section id="siteworks" class="portfolio">
+    <h2>作品集</h2>
+    <nav>
+        <ol class="clearfix">
+            <li id="portfolio1">所有</li>
+            <li id="portfolio2">框架</li>
+            <li id="portfolio3">原生 JS&amp; CSS </li>
+        </ol>
+        <div id="portfolioBar" class="bar state-1">
+            <div class="bar-inner"></div>
+        </div>
+    </nav>
+    <script>
+        portfolio1.onclick= function () {
+            portfolioBar.className = "bar state-1"
+        }
+        portfolio2.onclick= function () {
+            portfolioBar.className = "bar state-2"
+        }
+        portfolio3.onclick= function () {
+            portfolioBar.className = "bar state-3"
+        }
+    </script>
+
+    <div class="works" style="height: 422px">
+        <div class="big" style="top:0;left:0;">
+            <img src="mac.jpg" alt=" 作品1">
+        </div>
+        <div class="small" style="top:0;left:646px">
+            <img src="phone.jpg" alt="作品2">
+        </div>
+        <div class="small" style="top: 205px;left:646px">
+            <img src="watch.jpg" alt="作品3">
+        </div>
+    </div>
+</section>
+<script>
+    setTimeout(function(){siteWelcome.classList.remove('active')},1000)
+    window.onscroll = function (ev) {
+        if(window.scrollY>0){
+            topNavBar.classList.add('sticky')
+        }else{
+            topNavBar.classList.remove('sticky')
+        }
+    }
+    let liTags = document.querySelectorAll('nav > ul > li')  //注意写法
+    for(let i = 0;i<liTags.length;i++){
+        liTags[i].onmouseenter = function (x) {
+            let li = x.currentTarget
+            li.classList.add('active')
+            // let child = li.getElementsByTagName('ul')
+            // child[0].classList.add('active')  //要给元素添加属性，必须指定是哪个元素，精确到第几个,如[0]，不能不写
+        }
+        liTags[i].onmouseleave = function (x) {
+            let li = x.currentTarget
+            li.classList.remove('active')
+        }
+    }
+    //这份代码是监听的ul元素，当鼠标移动到 ul 上时，二级菜单会弹出，但无法点击到二级菜单
+    // let aTags = document.getElementsByClassName('menuTigger')
+    // for(let i =0;i<aTags.length;i++){
+    //     aTags[i].onmouseenter =function(x) {  //取元素的时候不取aTags[i],用function的第一个参数取更可靠
+    //         // console.log('mouseenter'+i)
+    //         // console.log(x.target)
+    //         // console.log(x.currentTarget)
+    //         // aTags[i].onclick 鼠标点击事件，x.target是指用户hover的那个元素,x.currentTarget是我们监听的那个元素，我们不关心用户hover的元素，我们关心的是我们监听的，当a标签里面有个span元素，点击span，target指操作的那个元素span，currentTarget指监听的元素a，因为我们点的是a的一部分。
+    //         let a = x.currentTarget
+    //         let brother = a.nextSibling
+    //         while (brother.tagName !== 'UL' ){
+    //             brother = brother.nextSibling
+    //         }
+    //         brother.classList.add('active')
+    //     }
+    //     aTags[i].onmouseleave = function(x) {
+    //         let a = x.currentTarget
+    //         let brother = a.nextSibling
+    //         while (brother.tagName !== 'UL' ){
+    //             brother = brother.nextSibling
+    //         }
+    //         brother.classList.remove('active')
+    //     }
+    // }
+    let aTags = document.querySelectorAll('nav > ul > li > a')  // querySelectorAll 之后可跟签名，可跟id或类
+    for(let i = 0;i < aTags.length;i++){
+        aTags[i].onclick = function (x) {
+            x.preventDefault()  // 阻止默认动作  如果本身是a标签，阻止之后会不再跳转
+            let a = x.currentTarget
+            // console.log(a.href)  // a.href 显示的是浏览器加工后的地址
+            // console.log(a.getAttribute('href'))  // 显示原始的地址，是什么就是什么
+            let href = a.getAttribute('href')  // '#siteskill'
+            let element = document.querySelector(href)
+            // let rect = element.getBoundingClientRect()
+            // console.log(rect.y)   //这个高度是指div距离窗口顶部的值，会随div位置变化而变化
+            let top = element.offsetTop  //这个高度是指div初始状态距离窗口的高度，不变
+            window.scrollTo(0,top-80)
+        }
+    }
+</script>
+</body>
+</html>

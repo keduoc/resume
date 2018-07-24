@@ -1,0 +1,26 @@
+.wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content:center;
+    align-items:center;
+    border:1px red solid;
+    height:800px;
+    width:800px;
+}
+.top,.center,.bottom {
+    border:1px red solid;
+    width:200px;
+    text-align:center;
+
+/*.center {*/
+    /*border:1px red solid;*/
+    /*width:200px;*/
+    /*text-align:center;*/
+    /*margin-left: 300px;*/
+/*}*/
+/*.bottom {*/
+    /*border:1px green solid;*/
+    /*width:200px;*/
+    /*text-align:center;*/
+    /*margin-left: 300px;*/
+}
